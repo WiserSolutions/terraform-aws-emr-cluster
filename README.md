@@ -6,7 +6,7 @@
 # terraform-aws-emr-cluster [![Codefresh Build Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/terraform-modules%2Fterraform-aws-emr-cluster?type=cf-1)](https://g.codefresh.io/public/accounts/cloudposse/pipelines/5d3b77ee6818e3f6dec32663) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-emr-cluster.svg)](https://github.com/cloudposse/terraform-aws-emr-cluster/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
-Terraform module to provision an Elastic MapReduce (EMR) cluster on AWS.
+Terraform module to provision an Elastic MapReduce (EMR) cluster on AWS. Wiser specific changes have been made to this module so that it creates resources such as security groups and IAM roles for the cluster, but does not create the cluster itself
 
 
 ---
