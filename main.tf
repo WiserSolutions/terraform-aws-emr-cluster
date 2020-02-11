@@ -51,13 +51,6 @@ module "label_core" {
   attributes = compact(concat(module.label.attributes, list("core")))
 }
 
-module "label_task" {
-  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.14.1"
-  enabled    = var.enabled && var.create_task_instance_group
-  context    = module.label.context
-  attributes = compact(concat(module.label.attributes, list("task")))
-}
-
 module "label_master_managed" {
   source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.14.1"
   enabled    = var.enabled
